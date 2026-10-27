@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>WA-agent Privacy Policy</title>
+<style>
+  :root { --bg: #fbfaf7; --fg: #1d1f21; --muted: #5b6066; --line: #e3e0d8; --accent: #1f6f5c; }
+  @media (prefers-color-scheme: dark) { :root { --bg: #141617; --fg: #e8e6e1; --muted: #a3a7ab; --line: #2b2f31; --accent: #6fc2a8; } }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 680px; margin: 0 auto; padding: 48px max(20px, env(safe-area-inset-left)) 64px; }
+  h1 { font-size: 30px; margin: 0 0 6px; }
+  p.lead { color: var(--muted); margin-top: 0; }
+  h2 { font-size: 19px; margin-top: 32px; }
+  ul { padding-left: 22px; }
+  li { margin: 6px 0; }
+  a { color: var(--accent); }
+  code { font-size: 15px; }
+  footer { margin-top: 40px; padding-top: 16px; border-top: 1px solid var(--line); color: var(--muted); font-size: 14px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Privacy Policy</h1>
+  <p class="lead">WA-agent · last updated 27 October 2026</p>
+
+  <p>WA-agent is a private tool used by one business to keep a task tracker. It runs on that business's own computer. This page explains what data it uses and why.</p>
+
+  <h2>What WA-agent reads</h2>
+  <ul>
+    <li><b>WhatsApp:</b> messages, files and voice notes in the client groups the business has allowed. Other chats are ignored.</li>
+    <li><b>Google Meet</b> (only if meeting summaries are switched on): the list of the business's meeting recordings, read only.</li>
+    <li><b>Google Calendar:</b> meeting invites (title and attendees), read only, to match a recording to the right client.</li>
+    <li><b>Google Drive:</b> Meet recording files, read only. It can also create and update its own files: the tracker spreadsheet, meeting summary documents and client files. It cannot see other Drive files.</li>
+  </ul>
+
+  <h2>Google permissions it asks for</h2>
+  <ul>
+    <li><code>drive.file</code>: only the files WA-agent itself creates.</li>
+    <li><code>meetings.space.readonly</code>, <code>calendar.events.readonly</code>, <code>drive.meet.readonly</code>: read-only access for meeting summaries.</li>
+  </ul>
+
+  <h2>How the data is used</h2>
+  <ul>
+    <li>Only to build the business's task tracker and meeting summaries.</li>
+    <li>Message text, file text and meeting transcripts are sent to Anthropic's Claude service to find tasks and write summaries. Meeting recordings may be sent to a speech-to-text service to turn speech into text. Voice notes are turned into text on the business's own computer.</li>
+    <li>No data is sold, used for advertising, or shared with anyone else.</li>
+  </ul>
+
+  <h2>Where it is stored</h2>
+  <ul>
+    <li>On the business's own computer, with the saved sign-ins encrypted.</li>
+    <li>In the business's own Google Drive (the tracker and the summaries).</li>
+  </ul>
+
+  <h2>Google API data</h2>
+  <p>WA-agent's use of information received from Google APIs follows the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements. Google user data is used only to provide the features described above. It is not transferred to others except as needed for those features, and it is not used for advertising.</p>
+
+  <h2>Removing access and data</h2>
+  <ul>
+    <li>Remove WA-agent's Google access at any time at <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</li>
+    <li>Remove its WhatsApp link from the phone: WhatsApp → Linked devices.</li>
+    <li>To have data deleted, email the address below.</li>
+  </ul>
+
+  <footer>Contact: rohit.solutionbowl@gmail.com · <a href="index.html">WA-agent home</a></footer>
+</main>
+</body>
+</html>
